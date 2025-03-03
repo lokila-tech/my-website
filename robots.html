@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>مرحبًا في عالم الروبوتات</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #E3F2FD, #BBDEFB); /* خلفية بتدرج ناعم */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+        
+        header {
+            background: linear-gradient(to right, #0D47A1, #1565C0); /* تدرج أزرق جذاب */
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 28px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            background: white;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            max-width: 900px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+        }
+
+        h1, h2 {
+            font-weight: bold;
+            text-align: center;
+            background: linear-gradient(to right, #FF5733, #FFBD33);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 26px;
+            border-bottom: 3px solid #FF5733;
+            padding-bottom: 8px;
+        }
+
+        p, ul {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #BBDEFB;
+            margin: 7px 0;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        ul li:hover {
+            background: #64B5F6;
+            color: white;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            margin: 15px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        a {
+            text-decoration: none;
+            color: #0D47A1;
+            font-weight: bold;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        a:hover {
+            color: #FF6F00;
+            text-shadow: 0 0 10px rgba(255, 111, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>مرحبًا في عالم الروبوتات</h1>
+        <img src="robot.jpg">
+    </header>
+
+    <section>
+        <h2>تعريف الروبوت</h2>
+        <p>الروبوت هو جهاز ميكانيكي قادر على تنفيذ مهام مبرمجة مسبقًا بشكل تلقائي، سواء بإشراف بشري أو بدونه. تُستخدم الروبوتات في مجموعة متنوعة من التطبيقات، من التصنيع إلى الاستكشاف الفضائي.</p>
+    </section>
+
+    <section>
+        <h2>أنواع الروبوتات</h2>
+        <div>
+            <h3>الروبوتات الصناعية</h3>
+            <img src="industrial_robot.jpg" alt="روبوت صناعي">
+            <p>تُستخدم في المصانع لأداء مهام مثل التجميع واللحام والطلاء.</p>
+        </div>
+        <div>
+            <h3>الروبوتات الطبية</h3>
+            <img src="medical_robot.jpg" alt="روبوت طبي">
+            <p>تُستخدم في العمليات الجراحية والتشخيص والعلاج.</p>
+        </div>
+        <div>
+            <h3>الروبوتات التعليمية</h3>
+            <img src="educational_robot.jpg" alt="روبوت تعليمي">
+            <p>تُستخدم في التعليم لتعليم الطلاب مبادئ البرمجة والهندسة بطرق تفاعلية وممتعة.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>استخدامات الروبوتات</h2>
+        <ul>
+            <li>الصناعة: تحسين الكفاءة والإنتاجية.</li>
+            <li>الطب: إجراء عمليات جراحية دقيقة.</li>
+            <li>الاستكشاف: استكشاف الفضاء وأعماق البحار.</li>
+            <li>الخدمات: تقديم المساعدة في المنازل والفنادق.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>طريقة عمل الروبوتات</h2>
+        <ul>
+            <li><strong>المستشعرات:</strong> تلتقط المعلومات من البيئة المحيطة.</li>
+            <li><strong>المعالج:</strong> يعالج المعلومات ويتخذ القرارات.</li>
+            <li><strong>المشغلات:</strong> الأجزاء الميكانيكية التي تنفذ الأوامر.</li>
+            <li><strong>مصادر الطاقة:</strong> توفر الطاقة اللازمة لتشغيل الروبوت.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>معرض صور لأشهر الروبوتات</h2>
+        <div class="gallery">
+            <strong>Sophia(صوفيا)</strong>
+            <img src="robot1.jpg" alt="روبوت 1">
+            <strong>Asimo(أسيمو)</strong>
+            <img src="robot2.jpg" alt="روبوت 2">
+        <strong>Spot(سبوت)</strong>
+            <img src="robot3.jpg" alt="روبوت 3">
+            <strong>Pepper(بيبر)</strong>
+            <img src="robot4.jpg" alt="روبوت 4">
+            <strong>Curiosity(كيريوسيتي)</strong>
+            <img src="robot5.jpg" alt="روبوت 5">
+        </div>
+    </section>
+    <section><h2>Sophia(صوفيا)</h2>
+    <ul><li>الشركة المصنعة:هانسون روبوتيكس</li>
+    <li>سنة الإطلاق:2015</li>
+<li>المهمة:التفاعل مع البشر والتعلم من سلوكياتهم</li>
+</ul>
+<h2>Asimo(أسيمو)</h2>
+    <ul><li>الشركة المصنعة:هوندا</li>
+    <li>سنة الإطلاق:2000</li>
+    <li>المهمة:مساعدة البشر في المهام اليومية والتفاعل معهم</li>
+    </ul>
+    <h2>Spot(سبوت)</h2>
+    <ul><li>الشركة المصنعة:بوسطن ديناميكس</li>
+    <li>سنة الإطلاق:2015</li>
+    <li>المهمة:التفتيشو,السلامة,وعمليات البحث والإنقاذ</li>
+    </ul>
+    <h2>Pepper(بيبر)</h2>
+    <ul><li>الشركة المصنعة:سوفت بانك روبوتيكس</li>
+    <li>سنة الإطلاق:2014</li>
+<li>المهمة:التفاعل الإجتماعي مع البشر وتقديم الخدمات</li></ul>
+<h2>Curiosity(كيريوسيتي)</h2>
+<ul><li>الشركة المصنعة:ناسا</li>
+<li>سنة الإطلاق:2011</li>
+<li>المهمة:استكشاف سطح المريغ ودراسة جيولوجيته</li></ul>
+    </section>
+
+    <section>
+        
+        <h2>فيديو تعليمي</h2>
+        <video controls width="920"> <source src="robot.mp4" type="video/mp4"></video>
+    </section>
+
+    <section>
+        <h2>منصات تعليمية</h2>
+        <ul>
+            <li><a href="https://www.edraak.org/programs/course/rm100-v2019sp/" target="_blank">دورة صناعة الروبوتات - إدراك</a></li>
+            <li><a href="https://oercommons.org/courseware/lesson/112690/student/?section=1" target="_blank">صناعة الروبوت التعليمي - OER Commons</a></li>
+        </ul>
+    </section>
+
+</body>
+</html>
